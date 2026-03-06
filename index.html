@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EchoSight | Wearable Vision Aid</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <div class="logo-mark"></div>
+        <span>EchoSight</span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#context">About</a>
+        <a href="#features">Capabilities</a>
+        <a href="#impact">Impact</a>
+        <a href="#dashboard" class="try-btn">Try Model</a>
+      </div>
+      <div class="hamburger" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero scroll-reveal">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <h1 class="headline">Advanced Vision for Accessibility</h1>
+      <p class="subheadline">Empowering visually impaired individuals with real-time environmental awareness, cognitive
+        audio feedback, and spatial autonomy.</p>
+      <a href="#dashboard" class="primary-btn">Try the Model</a>
+    </div>
+  </header>
+
+  <!-- CONTEXT: CHALLENGE & SOLUTION -->
+  <section id="context" class="section">
+    <div class="container scroll-reveal">
+      <div class="split-layout">
+        <div class="split-col">
+          <div class="label-badge">The Challenge</div>
+          <h2 class="section-title">Bridging the Gap</h2>
+          <p class="body-text">Visually impaired individuals often lack real-time awareness of their surroundings. Daily
+            activities such as navigating streets, identifying objects, recognizing people, and detecting signs can
+            become difficult. This creates dependency on external support systems and limits true independence.</p>
+        </div>
+        <div class="split-col">
+          <div class="label-badge highlight">The Solution</div>
+          <h2 class="section-title">EchoSight Accessibility</h2>
+          <p class="body-text">By providing an advanced ML pipeline, EchoSight seamlessly converts physical surroundings
+            into immediate, high-accuracy conversational feedback. It breaks down the barriers of traditional vision
+            dependencies by translating spatial pixels directly into semantic environmental awareness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE FEATURES -->
+  <section id="features" class="section dark-bg">
+    <div class="container scroll-reveal">
+      <h2 class="section-title center">Core Capabilities</h2>
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="f-icon">&#x1F527;</div>
+          <h3>Object Detection</h3>
+          <p>Detects common objects and obstacles (chairs, doors, vehicles, stairs) preventing collisions.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="f-icon">&#x1F464;</div>
+          <h3>Face Recognition</h3>
+          <p>Detects faces and recognizes known individuals instantly alerting you if "John is in front of you."</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="f-icon">&#x1F4C4;</div>
+          <h3>Language & Text</h3>
+          <p>Detects text on signboards, labels, and menus, parsing exact language scripts (English, Hindi, Tamil).</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="f-icon">&#x2194;</div>
+          <h3>Spatial Distance</h3>
+          <p>Estimates spatial distance between the user and nearby objects. "Obstacle 1 meter ahead."</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT SECTION -->
+  <section id="impact" class="section">
+    <div class="container scroll-reveal">
+      <div class="split-layout">
+        <div class="split-col impact-block">
+          <h3>Outdoor Navigation</h3>
+          <p>Detect vehicles, pedestrians, road obstacles, and street signs in real-time. Navigate urban environments
+            with confidence.</p>
+          <div class="audio-example">Audio: "Car approaching."</div>
+        </div>
+        <div class="split-col impact-block">
+          <h3>Indoor Navigation</h3>
+          <p>Identify furniture, doors, walls, and internal obstacles. Move through complex indoor layouts safely.</p>
+          <div class="audio-example">Audio: "Chair ahead."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW THIS HELPS BLIND USERS SECTION -->
+  <section id="benefits" class="section dark-bg">
+    <div class="container scroll-reveal">
+      <div class="label-badge highlight" style="margin-bottom: 12px; display: inline-block;">Real-World Utilities</div>
+      <h2 class="section-title">How This Helps Visually Impaired Users</h2>
+      <p class="body-text" style="margin-bottom: 40px; max-width: 800px;">This AI system benefits visually impaired
+        individuals in real-world situations, granting them independence and environmental awareness without relying
+        entirely on sight.</p>
+
+      <div class="split-layout" style="margin-bottom: 24px;">
+        <div class="split-col impact-block">
+          <h3>Navigation Assistance</h3>
+          <p>The system detects people, obstacles, objects, and text in the environment and converts them into audio
+            cues. This allows blind users to understand their surroundings actively.</p>
+          <div class="audio-example">"Person detected 2 meters ahead"<br>"Chair detected 1 meter ahead"<br>"Text ahead"
+          </div>
+        </div>
+        <div class="split-col impact-block">
+          <h3>Social Awareness</h3>
+          <p>Face recognition allows users to identify people nearby. This helps visually impaired users recognize
+            friends, family members, or colleagues quickly in public spaces.</p>
+          <div class="audio-example">"John detected ahead"</div>
+        </div>
+      </div>
+
+      <div class="split-layout">
+        <div class="split-col impact-block">
+          <h3>Obstacle Avoidance</h3>
+          <p>Object detection helps identify furniture, vehicles, walls, and obstacles. This improves safe navigation
+            both indoors and outdoors, mitigating the risk of injury.</p>
+          <div class="audio-example">"Obstacle detected 1 meter ahead"</div>
+        </div>
+        <div class="split-col impact-block">
+          <h3>Text Awareness</h3>
+          <p>The system detects when text is present in the environment such as signboards, labels, menus, or printed
+            notices. This alerts the user that important written information is nearby.</p>
+          <div class="audio-example">"Text ahead"</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEARABLE SYSTEM CONCEPT -->
+  <section id="wearable" class="section">
+    <div class="container scroll-reveal">
+      <div class="label-badge highlight" style="margin-bottom: 12px; display: inline-block;">Hardware Integration</div>
+      <h2 class="section-title">From AI Model to Wearable Device</h2>
+      <p class="body-text" style="max-width: 800px; margin-bottom: 40px;">The current ML model can be seamlessly
+        integrated into a wearable headset or smart glasses device.</p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="f-icon">&#x1F4F7;</div>
+          <h3>Camera Module</h3>
+          <p>A small camera mounted on the headset captures the user's surroundings in real time. The video feed is sent
+            directly to the AI model for analysis.</p>
+        </div>
+        <div class="feature-card">
+          <div class="f-icon">&#x1F5A5;</div>
+          <h3>Edge Processing Unit</h3>
+          <p>A compact processor such as a Raspberry Pi, Jetson Nano, or an edge AI processor runs the ML model locally.
+            This allows real-time object detection and face recognition without internet dependency.</p>
+        </div>
+        <div class="feature-card">
+          <div class="f-icon">&#x1F3A7;</div>
+          <h3>Audio Feedback System</h3>
+          <p>The processed information is converted into audio feedback. Embedded hardware (like bone conduction
+            headphones or small integrated speakers) allows the user to hear detection results while still hearing
+            environmental sounds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="f-icon">&#x1F50B;</div>
+          <h3>Power System</h3>
+          <p>A lightweight battery powers the entire system, allowing several hours of continuous, uninterrupted use.
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="margin-top: 40px; padding: 24px; background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+        <h3 style="margin-bottom: 12px; color: var(--text-primary);">Example Real-World Workflow</h3>
+        <p class="body-text">A blind user wearing the headset walks through a hallway. The camera captures the
+          surroundings. The AI model processes the video feed and detects objects and people. Audio output might say:
+        </p>
+        <div class="audio-example" style="margin-top: 12px; font-family: monospace; color: #a1a1a1;">
+          "Person detected 2 meters ahead"<br>
+          "Chair detected on your left"<br>
+          "Text ahead"
+        </div>
+        <p class="body-text" style="margin-top: 12px;">This gives the user real-time awareness of their surroundings
+          dynamically as they move.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE IMPACT SECTION -->
+  <section id="future-impact" class="section dark-bg">
+    <div class="container scroll-reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <h2 class="section-title center">Future Impact</h2>
+      <p class="body-text" style="font-size: 1.1rem; line-height: 1.8;">
+        Systems like EchoSight could help visually impaired individuals navigate unfamiliar environments, recognize
+        people nearby, detect obstacles, and access written information seamlessly. This technology has the immense
+        potential to <strong>increase independence and safety for visually impaired individuals globally.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- AI DASHBOARD (TRY MODEL) -->
+  <section id="dashboard" class="section dashboard-bg">
+    <div class="container scroll-reveal">
+
+      <div class="dash-header">
+        <h2 class="section-title">Model Workspace</h2>
+        <div class="dash-tabs">
+          <button class="tab-btn active" id="tabLive">Live Sensors</button>
+          <button class="tab-btn" id="tabMemory">Identity Memory</button>
+        </div>
+      </div>
+
+      <div class="dash-layout">
+
+        <!-- VISUAL STAGE -->
+        <div class="dash-viewport">
+
+          <!-- Live Camera Mode -->
+          <div id="liveMode" class="viewport-mode active">
+            <video id="webcam" autoplay muted playsinline></video>
+            <canvas id="overlay"></canvas>
+          </div>
+
+          <!-- Face Memory Mode -->
+          <div id="memoryMode" class="viewport-mode"
+            style="flex-direction: column; padding: 24px; background: var(--bg-primary); align-items: center; text-align: center; overflow-y: auto;">
+            <h3 style="margin-bottom: 8px;">Register Known Entity</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">Provide a name and either
+              capture your face via webcam or upload a photo.</p>
+
+            <input type="text" id="faceName" placeholder="Enter Name..."
+              style="width: 100%; max-width: 300px; margin-bottom: 24px; padding: 12px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-tertiary); color: #fff; outline:none;">
+
+            <!-- Dedicated Memory Webcam Feed -->
+            <div
+              style="width: 100%; max-width: 400px; aspect-ratio: 16/9; background: #000; border-radius: 8px; border: 1px solid var(--border); overflow: hidden; margin-bottom: 24px; position: relative;">
+              <video id="memoryWebcam" autoplay muted playsinline
+                style="width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1);"></video>
+            </div>
+
+            <div style="display:flex; gap: 12px; margin-bottom: 32px;">
+              <button id="btnCaptureCamera" class="primary-btn">Snap from Camera</button>
+              <label class="primary-btn"
+                style="cursor:pointer; background: transparent; border: 1px solid var(--border); color: var(--text-primary);">
+                Upload Photo <input type="file" id="faceUpload" accept="image/*" hidden>
+              </label>
+            </div>
+
+            <div style="width: 100%; border-top: 1px solid var(--border); padding-top: 24px;">
+              <h4 style="margin-bottom: 16px; color: var(--text-muted); text-align: left;">Identity Database</h4>
+              <div id="facesDatabase"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px;">
+                <div class="empty-state" style="grid-column: 1 / -1;">Memory bank empty.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PREDICTION RESULTS PANEL -->
+        <div class="dash-sidebar">
+          <div class="sidebar-header">
+            <h3>Inference Results</h3>
+            <div id="sysStatus" class="status-indicator">Loading Models...</div>
+          </div>
+
+          <!-- Voice Controls -->
+          <div class="control-group">
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggleAudio" checked>
+              <span class="slider"></span>
+            </label>
+            <span>Audio Feedback</span>
+          </div>
+          <div class="control-group">
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggleObjDet" checked>
+              <span class="slider"></span>
+            </label>
+            <span>Object Recognition</span>
+          </div>
+          <div class="control-group">
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggleFaceDet" checked>
+              <span class="slider"></span>
+            </label>
+            <span>Face Recognition</span>
+          </div>
+          <div class="control-group">
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggleTextDet" checked>
+              <span class="slider"></span>
+            </label>
+            <span>Text Awareness</span>
+          </div>
+
+          <p class="panel-desc" style="margin-top: 12px;">Real-time model predictions and confidence scoring.</p>
+
+          <div class="results-container" id="resultsPanel">
+            <!-- Cards injected via JS -->
+            <div class="empty-state">No predictions yet.</div>
+          </div>
+
+          <div class="action-footer">
+            <button id="btnHush" class="btn-dangerous">Stop Audio</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY FILM STRIP -->
+  <section class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title center" style="margin-bottom: 2rem;">Visual Processing Index</h2>
+    </div>
+    <div class="gallery-track-container">
+      <div class="gallery-track">
+        <!-- Placeholders demonstrating AI vision use-cases -->
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?auto=format&fit=crop&w=400&q=80')">
+        </div>
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1507208773393-40d9fc670acf?auto=format&fit=crop&w=400&q=80')">
+        </div>
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1542178243-bc20204b769f?auto=format&fit=crop&w=400&q=80')">
+        </div>
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=400&q=80')">
+        </div>
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=400&q=80')">
+        </div>
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=400&q=80')">
+        </div>
+        <!-- Duplicate for infinite scroll loop -->
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?auto=format&fit=crop&w=400&q=80')">
+        </div>
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1507208773393-40d9fc670acf?auto=format&fit=crop&w=400&q=80')">
+        </div>
+        <div class="gallery-item"
+          style="background-image: url('https://images.unsplash.com/photo-1542178243-bc20204b769f?auto=format&fit=crop&w=400&q=80')">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container scroll-reveal">
+      <h2 class="section-title center">Frequently Asked Questions</h2>
+      <div class="faq-accordion">
+
+        <div class="faq-item">
+          <button class="faq-question">How does EchoSight work?</button>
+          <div class="faq-answer">
+            <p>EchoSight utilizes a localized neural processing pipeline to intake visual data via a wearable camera,
+              process identifying features through object, facial, and OCR models, and relay that context back to the
+              user via an automated speech synthesis engine.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How does object detection help blind users?</button>
+          <div class="faq-answer">
+            <p>By constantly parsing the frame for 1000+ classifications of objects and evaluating their relative
+              distance based on bounding box proportions, the system can warn users of immediate hazards (like chairs or
+              cars) within 1 meter of collision.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What is text detection?</button>
+          <div class="faq-answer">
+            <p>Text detection isolates printed characters in the environment. Unlike standard readers, our engine
+              evaluates the unicode signatures to identify exact reading languages (English, Hindi, Tamil) on signs,
+              menus, or labels, alerting the user to localized information.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How does audio feedback work?</button>
+          <div class="faq-answer">
+            <p>We leverage native and cloud-based TTS engines prioritizing high-fidelity human voices. A specialized
+              queueing architecture prevents audio spam by caching recent identifiers, only Vocalizing new objects or
+              pressing obstacles.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM & FOOTER -->
+  <footer class="footer">
+    <div class="container scroll-reveal">
+      <div class="contact-section">
+        <h2>Get in Touch / Ask Us</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your message..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="primary-btn submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="logo">
+          <div class="logo-mark"></div>
+          <span>EchoSight</span>
+        </div>
+        <div class="social-links">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Email</a>
+        </div>
+        <p class="copyright">© 2026 EchoSight Project. Built for Accessibility.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
